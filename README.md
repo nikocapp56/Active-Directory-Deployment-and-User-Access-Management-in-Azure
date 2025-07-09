@@ -150,10 +150,10 @@ Enter Client’s public IP address and log in using the username/password you se
 
 Inside the Client VM, open Windows Powershell.
 
-<img width="610" alt="image" src="https://github.com/user-attachments/assets/8e64371b-7194-46e6-90a5-d93936eaa5c1" />
+Ping DC's private IP address.
 
-
-and run ipconfig /all
+Run ipconfig /all
 
 The output for the DNS settings should display DC’s private IP address, confirming that the client is using the Domain Controller for name resolution.
 
+<img width="610" alt="image" src="https://github.com/user-attachments/assets/8e64371b-7194-46e6-90a5-d93936eaa5c1" />
