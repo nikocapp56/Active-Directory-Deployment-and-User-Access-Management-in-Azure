@@ -5,7 +5,7 @@
 </p>
 
 <h1>Active Directory Infrastructure Setup in Azure</h1>
-This project demonstrates setting up the foundational infrastructure required for an Active Directory environment in the cloud using Microsoft Azure. The goal is to replicate an on-premises-style network by deploying and configuring virtual machines all within a secure, Azure-hosted virtual network.
+This project demonstrates setting up the foundational infrastructure required for an Active Directory environment in the cloud using Microsoft Azure. The goal is to replicate an on-premises-style network by deploying and configuring the essential Azure resources (virtual machines, virtual networks, and resource groups) all within a secure, Azure-hosted virtual network.
 
 <h2>Environments and Technologies Used</h2>
 
@@ -17,14 +17,6 @@ This project demonstrates setting up the foundational infrastructure required fo
 
 - Windows Server 2022 Datacenter: Azure Edition - x64 Gen2
 - Windows 10 Pro, version 22H2 - x64 Gen2
-
-
-<h2>High-Level Deployment and Configuration Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -156,4 +148,4 @@ Run ipconfig /all
 
 The output for the DNS settings should display DC’s private IP address, confirming that the client is using the Domain Controller for name resolution.
 
-<img width="610" alt="image" src="https://github.com/user-attachments/assets/8e64371b-7194-46e6-90a5-d93936eaa5c1" />
+<img width="610" alt="powershell" src="https://github.com/user-attachments/assets/8cc2bbcc-4fa3-46a3-9bdb-0694ed83e82a" />
