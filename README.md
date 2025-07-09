@@ -122,7 +122,7 @@ Click Save.
 
 <h3> 8️⃣ Login to Domain Controller VM </h3>
 
-Open Remote Desktop Connection on your local computer.
+Open Remote Desktop Connection.
 
 Enter DC’s public IP address and log in using the username/password you set before.
 
@@ -134,12 +134,19 @@ Inside the DC VM, open Windows Defender Firewall with Advanced Security.
 
 Click Windows Defender Firewall Properties.
 
-For each profile (Domain, Private, Public), set Firewall state to Off
+For each profile (Domain, Private, Public), set Firewall state: Off
 
 <img width="782" alt="firewalloff" src="https://github.com/user-attachments/assets/41578574-1bb8-40d8-a212-bf55b87fa839" />
 
+<h3> 🔟 Login to Client VM </h3>
+
+Open Remote Desktop Connection.
+
+Enter Client’s public IP address and log in using the username/password you set before.
+
 <img width="806" alt="RDC-client-1" src="https://github.com/user-attachments/assets/1d221b42-b5d9-4b76-bfcf-542027fcd485" />
 
+1️⃣1️⃣
 
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
