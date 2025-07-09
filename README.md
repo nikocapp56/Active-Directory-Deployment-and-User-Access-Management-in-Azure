@@ -74,7 +74,7 @@ Click Review + Create, then Create.
 <img width="475" alt="vmsize,password,licensing" src="https://github.com/user-attachments/assets/d5637f58-db61-47a7-adc8-29ce88bf8d13" />
 
 <h3> 4️⃣ Create Domain Controller VM </h3>
-<p>In an Active Directory environment, the Domain Controller also serves as the DNS server, handling all internal name resolution needed for domain authentication and resource access.</p>
+<p>In an Active Directory environment, the Domain Controller (DC) also serves as the DNS server, handling all internal name resolution needed for domain authentication and resource access.</p>
 Create a new Virtual Machine with the following configuration:
 
 - Resource Group: Choose the Resource Group we created earlier
@@ -90,11 +90,15 @@ Click Review + Create, then Create.
 
 <h3> 5️⃣ Set Domain Controller's NIC Private IP address to static </h3>
 
-When configuring a Domain Controller (DC), it’s essential that its IP address remains constant so that all domain-joined devices can reliably find it for authentication, DNS, and other directory services. 
+When configuring a DC, it’s essential that its IP address remains constant so that all domain-joined devices can reliably find it for authentication, DNS, and other directory services. 
 
 This is critical because if the DC’s IP changes, clients relying on it for DNS and domain services would fail to locate it.
 
-Virtual Machine -> dc-1 -> Network Settings -> Network Interface/IP Configuration
+Virtual Machine -> DC VM -> Network Settings -> Network Interface/IP Configuration
+
+Change Private IP address settings from Dynamic to Static.
+
+Click Save.
 
 <img width="622" alt="dc-1static" src="https://github.com/user-attachments/assets/f5c7c345-c953-45e0-9470-95ac16c70518" />
 
@@ -104,9 +108,19 @@ This ensures that the Client directs all domain-related queries to the Domain Co
 
 This is necessary so that when the Client later attempts to join the domain, it can correctly locate the domain controller using DNS.
 
+Virtual Machine -> Client VM -> Network Settings -> Network Interface/IP Configuration -> DNS Servers
+
+Select Custom, and enter DC's private IP address.
+
+Click Save.
+
 <img width="530" alt="client-1dnsserver" src="https://github.com/user-attachments/assets/4b613a8d-545f-480e-92b2-9780598352fd" />
 
+<h3> 7️⃣ Restart Client VM </h3>
+
 <img width="818" alt="client-1restart" src="https://github.com/user-attachments/assets/affe18e4-5e96-4acb-8801-271db9f81adc" />
+
+<h3> 8️⃣ Login to Domain Controller and disable Firewall </h3>
 
 <img width="807" alt="RDC-dc-1" src="https://github.com/user-attachments/assets/3ae1e24f-31ff-4da4-a332-04beb9d23077" />
 
