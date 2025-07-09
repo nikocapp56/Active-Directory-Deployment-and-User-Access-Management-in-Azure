@@ -120,19 +120,21 @@ Click Save.
 
 <img width="818" alt="client-1restart" src="https://github.com/user-attachments/assets/affe18e4-5e96-4acb-8801-271db9f81adc" />
 
-<h3> 8️⃣ Login to Domain Controller VM and disable Firewall (for testing connectivity) </h3>
+<h3> 8️⃣ Login to Domain Controller VM </h3>
 
 Open Remote Desktop Connection on your local computer.
 
 Enter DC’s public IP address and log in using the username/password you set before.
+
+<img width="807" alt="RDC-dc-1" src="https://github.com/user-attachments/assets/3ae1e24f-31ff-4da4-a332-04beb9d23077" />
+
+<h3> 9️⃣ Disable Firewall (for testing connectivity) </h3>
 
 Inside the DC VM, open Windows Defender Firewall with Advanced Security.
 
 Click Windows Defender Firewall Properties.
 
 For each profile (Domain, Private, Public), set Firewall state to Off
-
-<img width="807" alt="RDC-dc-1" src="https://github.com/user-attachments/assets/3ae1e24f-31ff-4da4-a332-04beb9d23077" />
 
 <img width="782" alt="firewalloff" src="https://github.com/user-attachments/assets/41578574-1bb8-40d8-a212-bf55b87fa839" />
 
