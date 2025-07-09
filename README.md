@@ -54,15 +54,16 @@ By the end, your Azure portal should look similar to this:
 
 <img width="557" alt="vnet" src="https://github.com/user-attachments/assets/23e03380-e422-4080-85b6-0c52e51fc28f" />
 
-<h3> 4️⃣ Create Client VM </h3>
+<h3> 3️⃣ Create Client VM </h3>
 Create a Virtual Machine with the following configuration:
 
+- Resource Group: Choose the Resourcce Group we created earlier
 - Name: client-1
 - Image: Windows 10 Pro, version 22H2
 - Size: 2 vCPUs, 8 GiB memory
 - Username/Password: set to your choice 
 - Licensing: Check the box to confirm Windows licensing
-
+- Network: Choose the Virtual Network we created earlier
 
 Click Review + Create, then Create.
 
@@ -70,20 +71,27 @@ Click Review + Create, then Create.
 
 <img width="475" alt="vmsize,password,licensing" src="https://github.com/user-attachments/assets/d5637f58-db61-47a7-adc8-29ce88bf8d13" />
 
-<h3> 5️⃣ Create Domain Controller VM </h3>
+<h3> 4️⃣ Create Domain Controller VM </h3>
 Create a new Virtual Machine with the following configuration:
 
+- Resource Group: Choose the Resourcce Group we created earlier
 - Name: dc-1
 - Image: Windows Server 2022 Datacenter
 - Size: 2 vCPUs, 8 GiB memory
 - Username/Password: Use the same username/password as before.
+- Virtual Network: Choose the Virtual Network we created earlier
 
 Click Review + Create, then Create.
 
 <img width="457" alt="dc-1" src="https://github.com/user-attachments/assets/b60ef10f-8580-45a2-ad27-1d0e797c7ff8" />
 
+<h3> 5️⃣ Set dc-1's Private IP address to static </h3>
+
+Home -> Virtual Machine -> dc-1 -> Network Settings -> Network Interface/IP Configuration
+
 <img width="622" alt="dc-1static" src="https://github.com/user-attachments/assets/f5c7c345-c953-45e0-9470-95ac16c70518" />
 
+<h3> 6️⃣ Set client-1’s DNS settings to DC-1’s Private IP address </h3>
 <img width="530" alt="client-1dnsserver" src="https://github.com/user-attachments/assets/4b613a8d-545f-480e-92b2-9780598352fd" />
 
 <img width="818" alt="client-1restart" src="https://github.com/user-attachments/assets/affe18e4-5e96-4acb-8801-271db9f81adc" />
