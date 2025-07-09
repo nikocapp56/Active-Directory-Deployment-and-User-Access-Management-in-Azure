@@ -85,13 +85,24 @@ Click Review + Create, then Create.
 
 <img width="457" alt="dc-1" src="https://github.com/user-attachments/assets/b60ef10f-8580-45a2-ad27-1d0e797c7ff8" />
 
-<h3> 5️⃣ Set dc-1's Private IP address to static </h3>
+<h3> 5️⃣ Set Domain Controller's NIC Private IP address to static </h3>
 
-Home -> Virtual Machine -> dc-1 -> Network Settings -> Network Interface/IP Configuration
+When configuring a Domain Controller (DC), it’s essential that its IP address remains constant so that all domain-joined devices can reliably find it for authentication, DNS, and other directory services.
+
+This ensures that the IP won’t change if the VM is stopped, restarted, or redeployed.
+
+This is critical because if the DC’s IP changes, clients relying on it for DNS and domain services would fail to locate it.
+
+Virtual Machine -> dc-1 -> Network Settings -> Network Interface/IP Configuration
 
 <img width="622" alt="dc-1static" src="https://github.com/user-attachments/assets/f5c7c345-c953-45e0-9470-95ac16c70518" />
 
-<h3> 6️⃣ Set client-1’s DNS settings to DC-1’s Private IP address </h3>
+<h3> 6️⃣ Set Client's DNS settings to Domain Controller's Private IP address </h3>
+
+In an Active Directory environment, the Domain Controller also serves as the DNS server, handling all internal name resolution needed for domain authentication and resource access.
+
+This ensures that the Client directs all domain-related queries to the Domain Controller.
+
 <img width="530" alt="client-1dnsserver" src="https://github.com/user-attachments/assets/4b613a8d-545f-480e-92b2-9780598352fd" />
 
 <img width="818" alt="client-1restart" src="https://github.com/user-attachments/assets/affe18e4-5e96-4acb-8801-271db9f81adc" />
