@@ -55,6 +55,8 @@ By the end, your Azure portal should look similar to this:
 <img width="557" alt="vnet" src="https://github.com/user-attachments/assets/23e03380-e422-4080-85b6-0c52e51fc28f" />
 
 <h3> 3️⃣ Create Client VM </h3>
+
+<p>In an Active Directory environment, a client machine is needed to later join to the domain, test authentication, and demonstrate communication with the Domain Controller.</p>
 Create a Virtual Machine with the following configuration:
 
 - Resource Group: Choose the Resource Group we created earlier
@@ -73,7 +75,6 @@ Click Review + Create, then Create.
 
 <h3> 4️⃣ Create Domain Controller VM </h3>
 <p>In an Active Directory environment, the Domain Controller also serves as the DNS server, handling all internal name resolution needed for domain authentication and resource access.</p>
-
 Create a new Virtual Machine with the following configuration:
 
 - Resource Group: Choose the Resource Group we created earlier
