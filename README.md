@@ -43,8 +43,13 @@ By the end, your Azure portal should look similar to this:
 
 <h3>1️⃣ Create Resource Group</h3>
 <p> Go to the Azure Portal and navigate to Resource Groups. </p>
-<p> Click + Create, and create a resource group named: </p>
+<p> Click + Create, and create a resource group. </p>
+
 <img width="539" alt="resourcegroup" src="https://github.com/user-attachments/assets/fe39fb40-c24b-4cd9-898c-d6225b75d3cd" />
+
+<h3> 2️⃣ Create Virtual Network </h3>
+<p> Go to the Azure Portal and navigate to Virtual Networks. </p>
+<p> Click + Create, and create a virtual network. </p>
 
 <img width="557" alt="vnet" src="https://github.com/user-attachments/assets/23e03380-e422-4080-85b6-0c52e51fc28f" />
 
@@ -65,6 +70,7 @@ By the end, your Azure portal should look similar to this:
 <img width="782" alt="firewalloff" src="https://github.com/user-attachments/assets/845b2379-607c-4c8d-adb1-f07b661de9ce" />
 
 <img width="806" alt="RDC-client-1" src="https://github.com/user-attachments/assets/1d221b42-b5d9-4b76-bfcf-542027fcd485" />
+
 
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
