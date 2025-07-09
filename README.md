@@ -10,8 +10,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop Connection
-- Active Directory Domain Services
-- PowerShell
+- Windows PowerShell
 
 <h2>Operating Systems Used </h2>
 
@@ -28,8 +27,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-<img width="801" alt="azure" src="https://github.com/user-attachments/assets/f81c6800-45ef-4c8d-be3c-1f2bde5a0e9c" />
+0️⃣ Overview of Azure Resources <br>
 
+During this tutorial, we will create and work with the following resources in Microsoft Azure: 
+- Virtual Machines:
+  - one for the domain controller (dc-1 running Windows Server 2022)
+  - one for the client machine (client-1 running Windows 10)
+- Resource Groups: To organize and manage related resources.
+- Virtual Networks: To allow secure communication between the virtual machines. <br>
+
+By the end, your Azure portal should look similar to this: <br>
+
+<img width="801" alt="azure" src="https://github.com/user-attachments/assets/f81c6800-45ef-4c8d-be3c-1f2bde5a0e9c" /> <br>
+1️⃣ Create Resource Group
+Go to the Azure Portal and navigate to Resource Groups.
+Click + Create, and create a resource group named:
 <img width="539" alt="resourcegroup" src="https://github.com/user-attachments/assets/fe39fb40-c24b-4cd9-898c-d6225b75d3cd" />
 
 <img width="557" alt="vnet" src="https://github.com/user-attachments/assets/23e03380-e422-4080-85b6-0c52e51fc28f" />
@@ -39,7 +51,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="454" alt="client-1" src="https://github.com/user-attachments/assets/ccb69a2a-feaa-498b-85ab-29d5cd941232" />
 
 <img width="475" alt="vmsize,password,licensing" src="https://github.com/user-attachments/assets/d5637f58-db61-47a7-adc8-29ce88bf8d13" />
-</p>
+
 <img width="622" alt="dc-1static" src="https://github.com/user-attachments/assets/f5c7c345-c953-45e0-9470-95ac16c70518" />
 
 <img width="530" alt="client-1dnsserver" src="https://github.com/user-attachments/assets/4b613a8d-545f-480e-92b2-9780598352fd" />
