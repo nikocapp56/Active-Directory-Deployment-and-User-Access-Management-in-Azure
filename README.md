@@ -5,7 +5,7 @@
 </p>
 
 <h1>Active Directory Infrastructure Setup in Azure</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This project demonstrates setting up the foundational infrastructure required for an Active Directory environment in the cloud using Microsoft Azure. The goal is to replicate an on-premises-style network by deploying and configuring virtual machines all within a secure, Azure-hosted virtual network.
 
 <h2>Environments and Technologies Used</h2>
 
@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>0️⃣ Overview of Azure Resources </h3>
 
-During this tutorial, we will create and work with the following resources in Microsoft Azure: 
+We will create and work with the following resources in Microsoft Azure: 
 - Virtual Machines:
   - one for the domain controller (dc-1 running Windows Server 2022)
   - one for the client machine (client-1 running Windows 10)
