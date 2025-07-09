@@ -57,8 +57,8 @@ By the end, your Azure portal should look similar to this:
 <h3> 3️⃣ Create Client VM </h3>
 Create a Virtual Machine with the following configuration:
 
-- Resource Group: Choose the Resourcce Group we created earlier
-- Name: client-1
+- Resource Group: Choose the Resource Group we created earlier
+- Name: set to your choice 
 - Image: Windows 10 Pro, version 22H2
 - Size: 2 vCPUs, 8 GiB memory
 - Username/Password: set to your choice 
@@ -72,10 +72,12 @@ Click Review + Create, then Create.
 <img width="475" alt="vmsize,password,licensing" src="https://github.com/user-attachments/assets/d5637f58-db61-47a7-adc8-29ce88bf8d13" />
 
 <h3> 4️⃣ Create Domain Controller VM </h3>
+<p>In an Active Directory environment, the Domain Controller also serves as the DNS server, handling all internal name resolution needed for domain authentication and resource access.</p>
+
 Create a new Virtual Machine with the following configuration:
 
-- Resource Group: Choose the Resourcce Group we created earlier
-- Name: dc-1
+- Resource Group: Choose the Resource Group we created earlier
+- Name: set to your choice 
 - Image: Windows Server 2022 Datacenter
 - Size: 2 vCPUs, 8 GiB memory
 - Username/Password: Use the same username/password as before.
@@ -87,9 +89,7 @@ Click Review + Create, then Create.
 
 <h3> 5️⃣ Set Domain Controller's NIC Private IP address to static </h3>
 
-When configuring a Domain Controller (DC), it’s essential that its IP address remains constant so that all domain-joined devices can reliably find it for authentication, DNS, and other directory services.
-
-This ensures that the IP won’t change if the VM is stopped, restarted, or redeployed.
+When configuring a Domain Controller (DC), it’s essential that its IP address remains constant so that all domain-joined devices can reliably find it for authentication, DNS, and other directory services. 
 
 This is critical because if the DC’s IP changes, clients relying on it for DNS and domain services would fail to locate it.
 
@@ -99,9 +99,9 @@ Virtual Machine -> dc-1 -> Network Settings -> Network Interface/IP Configuratio
 
 <h3> 6️⃣ Set Client's DNS settings to Domain Controller's Private IP address </h3>
 
-In an Active Directory environment, the Domain Controller also serves as the DNS server, handling all internal name resolution needed for domain authentication and resource access.
+This ensures that the Client directs all domain-related queries to the Domain Controller. 
 
-This ensures that the Client directs all domain-related queries to the Domain Controller.
+This is necessary so that when the Client later attempts to join the domain, it can correctly locate the domain controller using DNS.
 
 <img width="530" alt="client-1dnsserver" src="https://github.com/user-attachments/assets/4b613a8d-545f-480e-92b2-9780598352fd" />
 
