@@ -150,6 +150,8 @@ Enter Client’s public IP address and log in using the username/password you se
 
 Inside the Client VM, open Windows Powershell.
 
+<img width="610" alt="image" src="https://github.com/user-attachments/assets/8e64371b-7194-46e6-90a5-d93936eaa5c1" />
+
 
 and run ipconfig /all
 
