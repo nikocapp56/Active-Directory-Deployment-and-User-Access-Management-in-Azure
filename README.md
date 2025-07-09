@@ -134,7 +134,7 @@ For each profile (Domain, Private, Public), set Firewall state to Off
 
 <img width="807" alt="RDC-dc-1" src="https://github.com/user-attachments/assets/3ae1e24f-31ff-4da4-a332-04beb9d23077" />
 
-<img width="782" alt="firewalloff" src="https://github.com/user-attachments/assets/845b2379-607c-4c8d-adb1-f07b661de9ce" />
+<img width="782" alt="firewalloff" src="https://github.com/user-attachments/assets/41578574-1bb8-40d8-a212-bf55b87fa839" />
 
 <img width="806" alt="RDC-client-1" src="https://github.com/user-attachments/assets/1d221b42-b5d9-4b76-bfcf-542027fcd485" />
 
