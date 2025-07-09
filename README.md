@@ -27,19 +27,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-0️⃣ Overview of Azure Resources <br>
+<h3>0️⃣ Overview of Azure Resources </h3>
 
 During this tutorial, we will create and work with the following resources in Microsoft Azure: 
 - Virtual Machines:
   - one for the domain controller (dc-1 running Windows Server 2022)
   - one for the client machine (client-1 running Windows 10)
 - Resource Groups: To organize and manage related resources.
-- Virtual Networks: To allow secure communication between the virtual machines. <br>
+- Virtual Networks: To allow secure communication between the virtual machines. 
 
-By the end, your Azure portal should look similar to this: <br>
+By the end, your Azure portal should look similar to this: 
 
-<img width="801" alt="azure" src="https://github.com/user-attachments/assets/f81c6800-45ef-4c8d-be3c-1f2bde5a0e9c" /> <br>
-1️⃣ Create Resource Group
+<img width="801" alt="azure" src="https://github.com/user-attachments/assets/f81c6800-45ef-4c8d-be3c-1f2bde5a0e9c" /> 
+
+<h3>1️⃣ Create Resource Group</h3>
 Go to the Azure Portal and navigate to Resource Groups.
 Click + Create, and create a resource group named:
 <img width="539" alt="resourcegroup" src="https://github.com/user-attachments/assets/fe39fb40-c24b-4cd9-898c-d6225b75d3cd" />
