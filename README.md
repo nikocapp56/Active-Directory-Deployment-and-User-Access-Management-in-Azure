@@ -30,7 +30,7 @@ This project demonstrates setting up the foundational infrastructure required fo
 
 <h3>0️⃣ Overview of Azure Resources </h3>
 
-We will create and work with the following resources in Microsoft Azure: 
+We will create and work with the following resources in Microsoft Azure:
 - Virtual Machines:
   - one for the domain controller (dc-1 running Windows Server 2022)
   - one for the client machine (client-1 running Windows 10)
@@ -48,16 +48,39 @@ By the end, your Azure portal should look similar to this:
 <img width="539" alt="resourcegroup" src="https://github.com/user-attachments/assets/fe39fb40-c24b-4cd9-898c-d6225b75d3cd" />
 
 <h3> 2️⃣ Create Virtual Network </h3>
+
 <p> Go to the Azure Portal and navigate to Virtual Networks. </p>
 <p> Click + Create, and create a virtual network. </p>
 
 <img width="557" alt="vnet" src="https://github.com/user-attachments/assets/23e03380-e422-4080-85b6-0c52e51fc28f" />
 
-<img width="457" alt="dc-1" src="https://github.com/user-attachments/assets/b60ef10f-8580-45a2-ad27-1d0e797c7ff8" />
+<h3> 4️⃣ Create Client VM </h3>
+Create a Virtual Machine with the following configuration:
+
+- Name: client-1
+- Image: Windows 10 Pro, version 22H2
+- Size: 2 vCPUs, 8 GiB memory
+- Username/Password: set to your choice 
+- Licensing: Check the box to confirm Windows licensing
+
+
+Click Review + Create, then Create.
 
 <img width="454" alt="client-1" src="https://github.com/user-attachments/assets/ccb69a2a-feaa-498b-85ab-29d5cd941232" />
 
 <img width="475" alt="vmsize,password,licensing" src="https://github.com/user-attachments/assets/d5637f58-db61-47a7-adc8-29ce88bf8d13" />
+
+<h3> 5️⃣ Create Domain Controller VM </h3>
+Create a new Virtual Machine with the following configuration:
+
+- Name: dc-1
+- Image: Windows Server 2022 Datacenter
+- Size: 2 vCPUs, 8 GiB memory
+- Username/Password: Use the same username/password as before.
+
+Click Review + Create, then Create.
+
+<img width="457" alt="dc-1" src="https://github.com/user-attachments/assets/b60ef10f-8580-45a2-ad27-1d0e797c7ff8" />
 
 <img width="622" alt="dc-1static" src="https://github.com/user-attachments/assets/f5c7c345-c953-45e0-9470-95ac16c70518" />
 
