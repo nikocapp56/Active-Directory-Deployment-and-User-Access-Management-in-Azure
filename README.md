@@ -3,20 +3,21 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>Active Directory Deployment and User Access Management in Azure</h1>
+<h1>Active Directory Infrastructure Setup in Azure</h1>
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Remote Desktop Connection
 - Active Directory Domain Services
 - PowerShell
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
+- Windows Server 2022 Datacenter: Azure Edition - x64 Gen2
+- Windows 10 Pro, version 22H2 - x64 Gen2
+
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
